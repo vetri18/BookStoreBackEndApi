@@ -67,6 +67,8 @@ namespace BookStoreApi
 
             services.AddTransient<IUserBL, UserBL>();
             services.AddTransient<IUserRL, UserRL>();
+            services.AddTransient<IBookBL, BookBL>();
+            services.AddTransient<IBookRL, BookRL>();
             services.AddAuthentication(option =>
             {
                 option.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
