@@ -79,6 +79,8 @@ namespace BookStoreApi.Controllers
 
                 throw ex;
             }
+
+
         }
         [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
         [HttpPut("resetpassword")]
@@ -100,6 +102,8 @@ namespace BookStoreApi.Controllers
 
                 throw ex;
             }
+
+
         }
     }
 }
